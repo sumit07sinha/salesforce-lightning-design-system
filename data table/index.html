@@ -13,7 +13,7 @@
 					</div>
 				</th>
 				<th class="" scope="col">
-					<div class="slds-truncate" title="Name">Name <button class="slds-button slds-button_outline-brand" onclick="sortTable()">Sort</button></div>
+					<div class="slds-truncate" title="Name">Name <button class="slds-button slds-button_outline-brand" id="sortTable">Sort</button></div>
 				</th>
 				<th class="" scope="col">
 					<div class="slds-truncate" title="Close Date">Close Date</div>
@@ -33,64 +33,9 @@
 
 			</tr>
 		</thead>
+		
 		<tbody id="tBody">
-			<tr class="slds-hint-parent">
-				<th data-label="Opportunity Name" scope="row">
-					<div class="slds-truncate" title="Cloudhub">
-						Cloudhub
-					</div>
-				</th>
-				<td data-label="Account Name">
-					<div class="slds-truncate" title="Cloudhub">eloudhub</div>
-				</td>
-				<td data-label="Close Date">
-					<div class="slds-truncate" title="4/14/2015">4/14/2015</div>
-				</td>
-				<td data-label="Prospecting">
-					<div class="slds-truncate" title="Prospecting">Prospecting</div>
-				</td>
-				<td data-label="Confidence">
-					<div class="slds-truncate" title="20%">20%</div>
-				</td>
-				<td data-label="Amount">
-					<div class="slds-truncate" title="$25k">$25k</div>
-				</td>
-				<td data-label="Contact">
-					<div class="slds-truncate" title="jrogers@cloudhub.com">
-						jrogers@cloudhub.com
-						<button class="slds-button slds-button_success" onclick="addRows(event)">+</button>
-					</div>
-				</td>
-			</tr>
-			<tr class="slds-hint-parent">
-				<th data-label="Opportunity Name" scope="row">
-					<div class="slds-truncate" title="Cloudhub + Anypoint Connectors">
-						Dloudhub + Anypoint Connectors
-					</div>
-				</th>
-				<td data-label="Account Name">
-					<div class="slds-truncate" title="Cloudhub">Cloudhub</div>
-				</td>
-				<td data-label="Close Date">
-					<div class="slds-truncate" title="4/14/2015">4/14/2015</div>
-				</td>
-				<td data-label="Prospecting">
-					<div class="slds-truncate" title="Prospecting">Prospecting</div>
-				</td>
-				<td data-label="Confidence">
-					<div class="slds-truncate" title="20%">20%</div>
-				</td>
-				<td data-label="Amount">
-					<div class="slds-truncate" title="$25k">$25k</div>
-				</td>
-				<td data-label="Contact">
-					<div class="slds-truncate" title="jrogers@cloudhub.com">
-						jrogers@cloudhub.com
-						<button class="slds-button slds-button_success" onclick="addRows(event)">+</button><button class="slds-button slds-button_destructive" onclick="removeRows(event)">x</button>
-					</div>
-				</td>
-			</tr>
+			
 		</tbody>
 	</table>
-
 </body>
