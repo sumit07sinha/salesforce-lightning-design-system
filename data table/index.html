@@ -1,96 +1,43 @@
 <head>
-  <link rel="stylesheet" href="salesforce-lightning-design-system.min.css" />
-  <script src="script.js"></script>
+	<link rel="stylesheet" href="salesforce-lightning-design-system.min.css" />
+	<script src="script.js"></script>
 </head>
 
 <body>
-  <table class="slds-table slds-table_cell-buffer slds-no-row-hover slds-table_bordered" id="sTable">
-    <thead>
-      <tr class="slds-line-height_reset">
-        <th class="" scope="col">
-          <div class="slds-truncate" title="Opportunity Name">
-            Opportunity Name 
-          </div>
-        </th>
-        <th class="" scope="col">
-          <div class="slds-truncate" title="Name">Name  <button class="slds-button slds-button_outline-brand" onclick="sortTable()">Sort</button></div>
-        </th>
-        <th class="" scope="col">
-          <div class="slds-truncate" title="Close Date">Close Date</div>
-        </th>
-        <th class="" scope="col">
-          <div class="slds-truncate" title="Stage">Stage</div>
-        </th>
-        <th class="" scope="col">
-          <div class="slds-truncate" title="Confidence">Confidence</div>
-        </th>
-        <th class="" scope="col">
-          <div class="slds-truncate" title="Amount">Amount</div>
-        </th>
-        <th class="" scope="col">
-          <div class="slds-truncate" title="Contact">Contact</div>
-        </th>
-       
-      </tr>
-    </thead>
-    <tbody id="tBody">
-      <tr class="slds-hint-parent">
-        <th data-label="Opportunity Name" scope="row">
-          <div class="slds-truncate" title="Cloudhub">
-            Cloudhub
-          </div>
-        </th>
-        <td data-label="Account Name">
-          <div class="slds-truncate" title="Cloudhub">eloudhub</div>
-        </td>
-        <td data-label="Close Date">
-          <div class="slds-truncate" title="4/14/2015">4/14/2015</div>
-        </td>
-        <td data-label="Prospecting">
-          <div class="slds-truncate" title="Prospecting">Prospecting</div>
-        </td>
-        <td data-label="Confidence">
-          <div class="slds-truncate" title="20%">20%</div>
-        </td>
-        <td data-label="Amount">
-          <div class="slds-truncate" title="$25k">$25k</div>
-        </td>
-        <td data-label="Contact">
-          <div class="slds-truncate" title="jrogers@cloudhub.com">
-            jrogers@cloudhub.com
-            <button  class="slds-button slds-button_success" onclick="addRows(event)">+</button>
-          </div>
-        </td>
-      </tr>
-      <tr class="slds-hint-parent">
-        <th data-label="Opportunity Name" scope="row">
-          <div class="slds-truncate" title="Cloudhub + Anypoint Connectors">
-           Dloudhub + Anypoint Connectors
-          </div>
-        </th>
-        <td data-label="Account Name">
-          <div class="slds-truncate" title="Cloudhub">Cloudhub</div>
-        </td>
-        <td data-label="Close Date">
-          <div class="slds-truncate" title="4/14/2015">4/14/2015</div>
-        </td>
-        <td data-label="Prospecting">
-          <div class="slds-truncate" title="Prospecting">Prospecting</div>
-        </td>
-        <td data-label="Confidence">
-          <div class="slds-truncate" title="20%">20%</div>
-        </td>
-        <td data-label="Amount">
-          <div class="slds-truncate" title="$25k">$25k</div>
-        </td>
-        <td data-label="Contact">
-          <div class="slds-truncate" title="jrogers@cloudhub.com">
-            jrogers@cloudhub.com
-            <button class="slds-button slds-button_success" onclick="addRows(event)">+</button><button class="slds-button slds-button_destructive" onclick="removeRows(event)">x</button>
-          </div>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+	<table class="slds-table slds-table_cell-buffer slds-no-row-hover slds-table_bordered" id="sTable">
+		<thead>
+			<tr class="slds-line-height_reset">
+				<th class="" scope="col">
+					<div class="slds-truncate" title="Opportunity Name">
+						Opportunity Name
+					</div>
+				</th>
+				<th class="" scope="col">
+					<div class="slds-truncate" title="Name">Name <button class="slds-button slds-button_outline-brand" id="sortTable">Sort</button></div>
+				</th>
+				<th class="" scope="col">
+					<div class="slds-truncate" title="Close Date">Close Date</div>
+				</th>
+				<th class="" scope="col">
+					<div class="slds-truncate" title="Stage">Stage</div>
+				</th>
+				<th class="" scope="col">
+					<div class="slds-truncate" title="Confidence">Confidence</div>
+				</th>
+				<th class="" scope="col">
+					<div class="slds-truncate" title="Amount">Amount</div>
+				</th>
+				<th class="" scope="col">
+					<div class="slds-truncate" title="Contact">Contact</div>
+					<div class="slds-truncate"><button id="button">+</button></div>
+				</th>
 
+			</tr>
+			
+		</thead>
+		
+		<tbody id="tBody">
+			
+		</tbody>
+	</table>
 </body>
